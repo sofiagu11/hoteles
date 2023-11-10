@@ -13,7 +13,7 @@ export class Api{
 
     //1. Levantar un servidor
     levandarServidor(){
-        this.app.listen(3000,function(){
+        this.app.listen(process.env.PORT, function(){
             console.log("Servidor operando")
         })
     }
